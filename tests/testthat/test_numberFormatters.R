@@ -1,6 +1,6 @@
 # test the functions in numberFormatters.R
 
-context("correct behaviour")
+context("numFormatters correct behaviour")
 
 test_that("correct output", {
   expect_equal(round_dp(0.12345,0), "0")
@@ -11,7 +11,7 @@ test_that("correct output", {
 
 
 
-context("supply weird data")
+context("numFormatters supply weird data")
 
 test_that("must be numeric",{
   expect_error(round_dp("a",1), "num and dp must be numeric")
