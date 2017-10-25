@@ -1,6 +1,9 @@
 # number formatters
 
-#create a string formatted to n decimal places
+#' create a string formatted to n decimal places
+#' @param num a number
+#' @param dp a whole number >= 0
+#' @return a string version of the float to specified decimal places
 round_dp <- function(num,dp){
   if (!is.numeric(num) | !is.numeric(dp)) {
     stop("num and dp must be numeric")
@@ -14,8 +17,8 @@ round_dp <- function(num,dp){
   sprintf(paste0('%.',dp,'f'), num)
 }
 
-# rounds a number to 3 decimal places and returns a string
-# convience function
+#' rounds a number to 3 decimal places and returns a string
+#' convience function
 three_dp <- function(num){
   if (!is.numeric(num)) {
     stop("num must be numeric")
@@ -24,10 +27,9 @@ three_dp <- function(num){
 }
 
 
-# numbers 0:10 are converted into words
-# @param x
+#' numbers 0:10 are converted into words
+#' @param x a number
 num_to_word <- function(x){
-
   switch(x,
          'zero' = 0,
          'one' = 1,
