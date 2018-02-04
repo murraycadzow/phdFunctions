@@ -30,18 +30,18 @@ three_dp <- function(num){
 #' numbers 0:10 are converted into words
 #' @param x a number
 num_to_word <- function(x){
-  switch(x,
-         'zero' = 0,
-         'one' = 1,
-         'two' = 2,
-         'three' = 3,
-         'four' = 4,
-         'five' = 5,
-         'six' = 6,
-         'seven' = 7,
-         'eight' = 8,
-         'nine' = 9,
-         'ten' = 10,
-         x
+  dplyr::case_when(
+          0 == x ~ 'zero',
+          1 == x ~ 'one',
+          2 == x ~ 'two',
+          3 == x ~ 'three',
+          4 == x ~ 'four',
+          5 == x ~ 'five',
+          6 == x ~ 'six',
+          7 == x ~ 'seven',
+          8 == x ~ 'eight',
+          9 == x ~ 'nine',
+          10 == x ~ 'ten',
+          TRUE ~ as.character(x)
   )
 }
