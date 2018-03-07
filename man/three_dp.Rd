@@ -2,12 +2,20 @@
 % Please edit documentation in R/numberFormatters.R
 \name{three_dp}
 \alias{three_dp}
-\title{rounds a number to 3 decimal places and returns a string
-convience function}
+\title{three_dp}
 \usage{
 three_dp(num)
+}
+\arguments{
+\item{num}{a number to round}
+}
+\value{
+number rounded to 3 decimal places
 }
 \description{
 rounds a number to 3 decimal places and returns a string
 convience function
+}
+\examples{
+three_dp(0.123456)
 }

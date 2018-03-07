@@ -2,13 +2,16 @@
 % Please edit documentation in R/numberFormatters.R
 \name{num_to_word}
 \alias{num_to_word}
-\title{numbers 0:10 are converted into words}
+\title{num_to_words}
 \usage{
 num_to_word(x)
 }
 \arguments{
-\item{x}{a number}
+\item{x}{a number to convert to a string}
 }
-\description{
-numbers 0:10 are converted into words
+\value{
+a string
+}
+\examples{
+num_to_word(3)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/numberFormatters.R
 \name{round_dp}
 \alias{round_dp}
-\title{create a string formatted to n decimal places}
+\title{round_dp}
 \usage{
 round_dp(num, dp)
 }
@@ -12,7 +12,7 @@ round_dp(num, dp)
 \item{dp}{a whole number >= 0}
 }
 \value{
-a string version of the float to specified decimal places
+character string version of the float to specified decimal places
 }
 \description{
 create a string formatted to n decimal places
