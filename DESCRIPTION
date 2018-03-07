@@ -10,3 +10,6 @@ ByteCompile: true
 Author: Murray Cadzow
 Maintainer: Murray Cadzow <murray.cadzow@otago.ac.nz>
 RoxygenNote: 6.0.1
+Imports: 
+    dplyr,
+    magrittr
