@@ -1,5 +1,10 @@
-# replaces the long statname with the abbrevation that can then be fed into short_to_latex
-# which creates the latex glossary command for the stat
+#' @title
+#' stat_to_short
+#'
+#' @description
+#' replaces the long statname with the abbrevation that can then be fed into short_to_latex
+#' which creates the latex glossary command for the stat
+#' @export
 stat_to_short <- function(x){
   switch(x,
          Tajima.D = "td",
@@ -11,7 +16,12 @@ stat_to_short <- function(x){
   )
 }
 
-# often used in conjunction with stat_to_short()
+#' @title
+#' short_to_latex
+#' @description
+#' often used in conjunction with stat_to_short()
+#'
+#' @export
 short_to_latex <- function(x){
   switch(x,
          td = "\\gls{td}",

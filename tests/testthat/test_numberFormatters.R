@@ -8,7 +8,7 @@ test_that("correct output", {
   expect_equal(three_dp(0.123456), "0.123")
   expect_equal(three_dp(0.12), "0.120")
   expect_equal(format_p_md(0.1234), "0.123")
-  expect_equal(format_p_md(0.1234/1000), "1.234x10^-4^")
+  expect_equal(format_p_md(0.1234/1000), "1.234 x 10^-4^")
   expect_equal(format_p_md(0.1234, sci = FALSE), "0.123")
   expect_equal(format_p_md(0.1234/1000, sci = FALSE), "0.000")
 })
