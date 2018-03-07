@@ -69,6 +69,9 @@ format_p_md <- function(p, sci = TRUE, digits = 3, sci_thres = 1e-3){
 #' @title
 #' format_p_ke
 #'
+#' @description
+#' a wrapper for kableExtra::cell_spec() around format_p_md
+#'
 #' @param p numeric atom
 #' @param sci use scientific x10 format
 #' @param digits number of decimal places to display

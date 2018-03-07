@@ -20,6 +20,9 @@ format_p_ke(p, sci = TRUE, digits = 3, sci_thres = 0.001, ...)
 \value{
 character atom
 }
+\description{
+a wrapper for kableExtra::cell_spec() around format_p_md
+}
 \examples{
 format_p_ke(p = 0.1234, sci = TRUE, digits = 3, sci_thres = 1e-3, bold = TRUE)
 }
