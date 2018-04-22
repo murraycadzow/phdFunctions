@@ -56,8 +56,8 @@ format_p_md <- function(p, sci = TRUE, digits = 3, sci_thres = 1e-3, format = 'h
   replace1 <- " x 10^"
   replace2 <- "^"
   if(format == 'latex'){
-    replace1 <- " x 10$^{"
-    replace2 <- "}$"
+    replace1 <- " x 10\\\\textsuperscript{"
+    replace2 <- "}"
   }
   if(p < sci_thres && sci){
     sprintf(paste0("%.",digits,"e"), p) %>%
